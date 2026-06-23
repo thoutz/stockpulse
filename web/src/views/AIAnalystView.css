@@ -1,0 +1,133 @@
+.ai-view {
+  padding-bottom: var(--space-lg);
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
+.ai-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.suggestion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.suggestion-chip {
+  flex: 1 1 calc(50% - var(--space-sm));
+  max-width: calc(50% - var(--space-sm));
+  min-width: 140px;
+  font-size: 12px;
+  color: var(--text-second);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--surface2);
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+@media (min-width: 720px) {
+  .suggestion-chip {
+    flex: 1 1 calc(25% - var(--space-sm));
+    max-width: calc(25% - var(--space-sm));
+  }
+}
+
+.suggestion-chip:hover {
+  border-color: var(--border);
+}
+
+.chat-input-row {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-end;
+  margin-bottom: var(--space-md);
+}
+
+.chat-input {
+  flex: 1;
+  padding: var(--space-md);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  font-size: 14px;
+  resize: none;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.chat-send {
+  font-size: 24px;
+  color: var(--blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-send:disabled {
+  color: var(--text-dim);
+}
+
+.chat-send.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+.ai-loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.ai-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ai-response {
+  padding: var(--space-lg);
+  background: var(--blue-muted);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--blue);
+}
+
+.ai-response-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.ai-response-time {
+  font-size: 9px;
+  color: var(--text-muted);
+}

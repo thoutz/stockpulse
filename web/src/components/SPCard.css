@@ -1,0 +1,14 @@
+.sp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.sp-card[role="button"] {
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.sp-card[role="button"]:hover {
+  border-color: var(--border2);
+}

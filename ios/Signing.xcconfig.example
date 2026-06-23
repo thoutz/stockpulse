@@ -1,0 +1,6 @@
+// Copy to Signing.xcconfig and set your Apple Development Team ID.
+// Find it: Xcode → Settings → Accounts → [Team] → Team ID
+// Or: security find-identity -v -p codesigning
+DEVELOPMENT_TEAM = YOUR_TEAM_ID_HERE
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = Apple Development

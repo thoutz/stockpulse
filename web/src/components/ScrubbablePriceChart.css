@@ -1,0 +1,75 @@
+.scrub-price-chart {
+  width: 100%;
+}
+
+.scrub-price-range-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.scrub-price-range-btn {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dim);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+.scrub-price-range-btn.active {
+  color: var(--blue);
+  background: color-mix(in srgb, var(--blue) 12%, transparent);
+  border-color: color-mix(in srgb, var(--blue) 35%, var(--border));
+}
+
+.scrub-price-loading {
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.scrub-price-error {
+  font-size: 10px;
+  color: var(--red);
+  margin-bottom: var(--space-sm);
+}
+
+.scrub-price-empty {
+  font-size: 11px;
+  color: var(--text-muted);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrub-price-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scrub-price-plot {
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.monitor-detail-change {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.monitor-detail-sublabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.monitor-detail-price-large {
+  font-size: 20px;
+  font-weight: 700;
+}

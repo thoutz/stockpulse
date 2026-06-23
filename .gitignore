@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+
+# iOS (local signing/config)
+ios/Config.xcconfig
+ios/Signing.xcconfig
+ios/xcuserdata/
+ios/DerivedData/
+*.xcuserstate
+
+# IDE
+.cursor/
+.claude/

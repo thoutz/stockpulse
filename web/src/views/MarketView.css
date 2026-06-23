@@ -1,0 +1,152 @@
+.indices-row {
+  display: flex;
+  gap: var(--space-sm);
+  margin: var(--space-sm) 0 var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.index-card {
+  flex: 1;
+  min-width: 160px;
+  padding: var(--space-md);
+}
+
+.index-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.index-sub {
+  font-size: 9px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.index-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.index-changes {
+  display: flex;
+  gap: var(--space-md);
+  font-size: 11px;
+  margin: var(--space-sm) 0;
+}
+
+.industry-section {
+  margin-bottom: var(--space-xl);
+}
+
+.industry-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: var(--space-xs) 0 var(--space-md);
+}
+
+.industry-tickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.ticker-card {
+  min-width: 140px;
+  padding: var(--space-md);
+  cursor: pointer;
+}
+
+.ticker-card.selected {
+  border-color: var(--blue);
+  background: var(--surface2);
+  box-shadow: 0 0 0 1px rgba(96, 165, 250, 0.25);
+}
+
+.ticker-card-symbol {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ticker-card-name {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.ticker-card-price {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ticker-card-chg {
+  font-size: 11px;
+  margin: 2px 0 var(--space-xs);
+}
+
+.company-detail {
+  padding: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.company-ticker {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.company-name {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.company-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.company-changes {
+  display: flex;
+  gap: var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.rsi {
+  color: var(--text-muted);
+}
+
+.company-blurb {
+  font-size: 13px;
+  color: var(--text-second);
+  line-height: 1.5;
+  margin-top: var(--space-md);
+}
+
+.market-brief-card {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--purple);
+  margin-top: var(--space-sm);
+}
+
+.market-brief-purple {
+  background: var(--purple-muted);
+  border-left-color: var(--purple);
+}
+
+.market-brief-orange {
+  background: var(--orange-muted);
+  border-left-color: var(--orange);
+}
+
+.market-brief-stamp {
+  font-size: 9px;
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+}
+
+.market-charts {
+  margin-bottom: var(--space-xl);
+}

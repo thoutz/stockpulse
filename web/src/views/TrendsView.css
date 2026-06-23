@@ -1,0 +1,84 @@
+.trends-card {
+  margin-bottom: var(--space-lg);
+  overflow: hidden;
+}
+
+.trends-card-header {
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--border);
+}
+
+.trends-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.trends-subtitle {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+.trends-range-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0 var(--space-lg) var(--space-md);
+}
+
+.trends-range-btn {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dim);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+.trends-range-btn.active {
+  color: var(--blue);
+  background: rgba(96, 165, 250, 0.12);
+  border-color: rgba(96, 165, 250, 0.35);
+}
+
+.trends-range-loading {
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.trends-range-error {
+  font-size: 11px;
+  color: var(--red);
+  padding: 0 var(--space-lg) var(--space-sm);
+}
+
+.trends-chart-wrap {
+  padding: var(--space-lg);
+}
+
+.trends-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: 0 var(--space-lg) var(--space-lg);
+}
+
+.trends-summary-item {
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  border-top: 3px solid;
+}
+
+.trends-summary-ticker {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.trends-summary-pct {
+  font-size: 10px;
+  color: var(--text-muted);
+}

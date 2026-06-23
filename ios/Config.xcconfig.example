@@ -1,0 +1,14 @@
+// Copy to Config.xcconfig and add your API keys (Config.xcconfig is gitignored).
+//
+// RECOMMENDED — server handles all Massive + Groq (fast launch, no rate limits on device).
+// Use $(SLASH) — bare https:// is truncated at // in .xcconfig files.
+SLASH = /
+STOCKPULSE_API_BASE_URL = https:$(SLASH)$(SLASH)api.tryan.app
+//
+// Optional dev-only fallbacks (leave blank when using server):
+// MASSIVE_API_KEY — only if STOCKPULSE_API_BASE_URL is empty
+// GROQ_API_KEY — only for local AI without server
+MASSIVE_API_KEY =
+GROQ_API_KEY =
+ANTHROPIC_API_KEY =
+TRADING_API_SECRET =
